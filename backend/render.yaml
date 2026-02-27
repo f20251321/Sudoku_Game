@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: sudoku-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: FRONTEND_URL
+        value: "*" # Set this to your GitHub Pages URL later for better security
+    # Add native dependencies
+    nativeBuildCommands:
+      - apt-get update && apt-get install -y tesseract-ocr libgl1

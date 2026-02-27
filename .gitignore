@@ -1,0 +1,15 @@
+node_modules/
+frontend/node_modules/
+backend/venv/
+backend/venv_311/
+dist/
+.env
+__pycache__/
+*.pyc
+.DS_Store
+# Exclude internal documentation (tasks, plans, etc)
+.gemini/
+brain/
+implementation_plan.md
+task.md
+walkthrough.md

@@ -1,0 +1,190 @@
+.play-sudoku {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.play-container {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-link {
+  align-self: flex-start;
+  color: #0a66c2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+/* Start Screen */
+.start-screen {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.difficulty-selector-large {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.difficulty-selector-large label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 8px;
+}
+
+.difficulty-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+  appearance: none;
+  /* Custom chevron usually added here, keeping simple for now */
+}
+
+.difficulty-select:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  border-radius: 24px;
+  /* Pill shape */
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  line-height: 1.5;
+}
+
+.btn-primary {
+  background-color: #0a66c2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #004182;
+}
+
+.btn-primary:active {
+  background-color: #004182;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(0, 0, 0, 0.6);
+  margin-left: 8px;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(0, 0, 0, 0.9);
+}
+
+.btn-large {
+  width: 100%;
+  padding: 12px 24px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Game Controls */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.difficulty-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.difficulty-selector label {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.difficulty-badge {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  text-transform: capitalize;
+}
+
+/* Messages */
+.error-message {
+  color: #d93025;
+  background-color: #fce8e6;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 16px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.completion-message {
+  background-color: #e6f4ea;
+  color: #137333;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+  max-width: 500px;
+}
+
+.ready-to-play {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.ready-to-play p {
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
